@@ -1,0 +1,30 @@
+{
+  "name": "tree_folder",
+  "version": "1.0.0",
+  "description": "folder Source tree",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -S"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TuyenGa/Tree_folder.git"
+  },
+  "keywords": [
+    "source",
+    "tree"
+  ],
+  "author": "vuong quang tuyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TuyenGa/Tree_folder/issues"
+  },
+  "homepage": "https://github.com/TuyenGa/Tree_folder#readme",
+  "dependencies": {
+    "caporal": "^0.8.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "readline-sync": "^1.4.7",
+    "url": "^0.11.0"
+  }
+}
