@@ -2,27 +2,17 @@
 const fs = require('fs')
 const path = require('path')
 
-const pathName = '/Users/tuyen/Desktop/TreefOllder'
-function tree(fileName)
+const pathName = '/Users/tuyen/Desktop'
+
+function Tree(fileName)
 {
-    let lstart = fs.lstatSync(fileName).isDirectory()
-
-    let baseName = {
-        name : path.basename(fileName),
-        path : fileName
-    }
-
-    if(lstart)
-    {
-        baseName.type = 'folder'
+   let index = fs.lstatSync(fileName) // kiem tra duong dan co phai thu muc k
+   let dir = path.basename(fileName)
+   if(index.isDirectory())
+   {
         
-        baseName.children = fs.readdirSync(fileName).map((child) => {
-            
-        })
-    }
-    
+   }
 
-    
 }
 
-tree()
+Tree(pathName)
